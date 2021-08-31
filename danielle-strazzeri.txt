@@ -45,6 +45,7 @@ Link to finished Codepen: https://codepen.io/danielleyvette/pen/QWgNbOp?editors=
     21. How do we select a p element with a single class of “human””?
     p.human {}
     22. What is a parent child selector? When would this be useful? 
+    element>element It would be useful to use when selecting elements with a specific parent
     23. How do you select all links within a div with the class of sidebar?
     .sidebar
     24. What is a pseudo selector?
@@ -64,18 +65,33 @@ Link to finished Codepen: https://codepen.io/danielleyvette/pen/QWgNbOp?editors=
     30. How do I write a comment in CSS?
     Place text inside /*comment here*/ marks
     31. How do I find out what file I am in, when I am using the command line? 
-    
+    git status.
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm -r you must be careful because some systems will not promt you before deleting file
     34. Why should I use version control? 
+    Because version control records your changes overtime, it can be useful for notes, debugging and more.
     35. How often should I commit to github?
+    Every 20 minutes
     36. What is the command we would use to push our repo up to github? 
+    git add .
+    git commit -m "message"
+    git push
     37. Walk me through Lambda's git flow. 
+    Fork, clone, work on project, create pull request, send link.
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    A block element always starts on a new line and will always take up the full width available
+    An inline element does not start on a new line and only takes up as much space as necessary
     2. What happens when an element is positioned absolutely? 
+    The element is positioned relative to its 1st positioned ancestor element
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    display: inline-block
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    3 block elements: address, div, <h1>-<h6>
+    3 inline elements: <a>, <button>, <img>
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    The box model puts all elements into boxes, display: block
